@@ -1,1 +1,19 @@
-/* Estilos para el mapa */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    touch-action: pan-x pan-y; /* mejor manejo táctil para móviles */
+}
+
+h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
