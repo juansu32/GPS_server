@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gps-tracker
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: bash start.sh
+    envVars:
+      - key: GEOLOCATION_API_KEY
+        value: {{GEOLOCATION_API_KEY}}  # Reemplaza esto en Render UI
+      - key: GOOGLE_MAPS_API_KEY
+        value: {{GOOGLE_MAPS_API_KEY}}  # Reemplaza esto en Render UI
+    autoDeploy: true
